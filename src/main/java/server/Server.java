@@ -11,8 +11,8 @@ import java.util.ArrayList;
 public class Server {
 	public static Console cnsl;
 
-    public static double get_value(int x){
-        double result = 0.0;
+    public static int get_value(int x){
+        int result = 0;
         for(int i=0;Interface.elem.coordinates.size()>i;i++){
             if(i==x){
                 result = Interface.elem.coordinates.get(i);
@@ -23,9 +23,6 @@ public class Server {
     }
 
 	public static void init(){
-        String name;
-        String l_name;
-        String age;
 
         String stringOBJ;
         String final_obj;
@@ -41,8 +38,8 @@ public class Server {
 
             stringOBJ = "{\"name\" :\"Silvio\",\"lastname\":\"Molina\",\"age\":\"23\"}";
 
-            double first = get_value(0);
-            double secon = get_value(1);
+            int first = get_value(0);
+            int secon = get_value(1);
 
             coordinatesOBJ = "{\"x\":\""+first+"\",\"y\":\""+secon+"\"}";
 

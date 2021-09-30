@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Element {
-	public static ArrayList<Double> coordinates = new ArrayList<Double>();
+	public static ArrayList<Integer> coordinates = new ArrayList<Integer>();
 
 	public void show_coordinates(){
 		System.out.println(this.coordinates);
 	}
 
-	public void add_coordinates(double x, double y){
-		Iterator<Double> itr = this.coordinates.iterator();
+	public void add_coordinates(int x, int y){
+		Iterator<Integer> itr = this.coordinates.iterator();
 		while (itr.hasNext()) {
-		    Double number = itr.next();
-		       itr.remove();
+		    Integer number = itr.next();
+		    itr.remove();
 		}
 		
 		this.coordinates.add(0,x);
